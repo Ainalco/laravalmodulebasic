@@ -1,0 +1,118 @@
+.main-header .logo {
+    background-color: #019868;
+    box-shadow: none;
+}
+.main-sidebar {
+  width: 280px;
+  background: #019868;
+}
+.main-header .navbar {
+    margin-left: 280px;
+}
+
+@media (max-width: 767px) {
+
+  .main-sidebar,
+  .left-side {
+    -webkit-transform: translate(-280px, 0);
+    transform: translate(-280px, 0);
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-mini.sidebar-collapse .main-sidebar {
+    width: 70px !important;
+  }
+
+  .sidebar-mini.sidebar-collapse .content-wrapper,
+  .sidebar-mini.sidebar-collapse .right-side,
+  .sidebar-mini.sidebar-collapse .main-footer {
+    margin-left: 70px !important;
+  }
+  .sidebar-mini.sidebar-collapse .main-header .navbar {
+    margin-left: 70px;
+}
+  .sidebar-menu>li.header {
+  border-bottom: 0;
+  color: #9da9bb;
+  font-size: 11px;
+}
+
+.sidebar-menu>li>a {
+  /* padding: 8px 5px 8px 25px; */
+  padding: 12px 5px 12px 22px;
+  /* color: #5e6e82; */
+  color: #fff;
+  /* color: rgba(255, 255, 255, .75); */
+  /* font-size: 14px; */
+  display: flex;
+  align-items: center;
+  /* font-weight: 600; */
+}
+
+.sidebar-menu>li:hover>a,
+.sidebar-menu>li.active>a {
+  /* color: #232e3c; */
+  background: #019868;
+}
+
+.sidebar-menu>li>a>i {
+  font-size: 18px;
+}
+
+
+
+
+
+
+.sidebar-menu .treeview-menu {
+  background-color: #019868;
+}
+
+.sidebar-collapse .sidebar-menu .treeview-menu>li>a {
+  padding: 5px 5px 5px 5px;
+}
+
+.sidebar-menu .treeview-menu>li>a {
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-menu .treeview-menu:before {
+  display: none;
+}
+
+.sidebar-menu .treeview-menu>li::before {
+  display: none;
+}
+
+.sidebar-menu li>a>.fa-angle-left,
+.sidebar-menu li>a>.pull-right-container>.fa-angle-left {
+  font-size: 11px;
+}
+
+/* Sidebar toggle */
+.main-header .sidebar-toggle {
+  border-right: 0;
+  font-size: 18px;
+  background-color: #fff;
+  box-shadow: 0px 1px 4px 0px #14034212;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.main-header .sidebar-toggle:focus,
+.main-header .sidebar-toggle:active,
+.main-header .sidebar-toggle:hover {
+  background-color: #20c997;
+  color: #fff;
+}
+
